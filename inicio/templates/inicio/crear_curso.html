@@ -6,3 +6,13 @@
 Bienvenidos!
 {% endblock h1_head %}
 
+{% block main %}
+
+<form action= "" method= "post">
+    {% csrf_token %}
+
+{{formulario}}
+<input type= "submit" value= "Crear">
+</form>
+
+{% endblock main %}
